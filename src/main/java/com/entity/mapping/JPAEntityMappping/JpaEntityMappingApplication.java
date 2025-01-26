@@ -28,7 +28,7 @@ public class JpaEntityMappingApplication implements CommandLineRunner{
 		Customer customer = new Customer("Tom");
 		Items items = new Items("pen");
 		customer.setItems(items);
-		itemRepository.save(items);
+		//itemRepository.save(items);  this will not required for cascade all property
 		customerRepository.save(customer);
 	}
 

@@ -13,7 +13,7 @@ public class Customer {
 
     String  name;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     Items items;
 
     public Customer(){}
